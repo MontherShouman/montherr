@@ -1,0 +1,30 @@
+menu_text = """
+====================
+1. List the tasks
+2. Add a task
+3. Remove a task
+4. Mark task complete
+5. Quit
+
+What would you like to do? """
+
+program_is_running = True
+
+while program_is_running:
+    decision = input(menu_text)
+    if decision == '1':
+        list_tasks()
+
+    # Add elif statements for inputs 2, 3, and 4
+
+    elif decision == '2':
+        add_task()
+    elif decision == '3':
+        remove_task()
+    elif decision == '4':
+        Mark_complete()
+
+    elif decision == '5':
+        program_is_running = False
+    else:
+        print('please choose a valid option')
